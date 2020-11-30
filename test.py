@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import model
 from input_data import get_files
 
+
 # 获取一张图片
 def get_one_image(train):
     # 输入参数：train,训练图片的路径
@@ -37,7 +38,7 @@ def evaluate_one_image(image_array):
         x = tf.placeholder(tf.float32, shape=[64, 64, 3])
 
         # you need to change the directories to yours.
-        logs_train_dir = 'D:/ML/flower/save/'
+        logs_train_dir = 'F:/WorkSpace/Python/four_flower/save'
 
         saver = tf.train.Saver()
 
@@ -68,9 +69,10 @@ def evaluate_one_image(image_array):
 # ------------------------------------------------------------------------
 
 if __name__ == '__main__':
-    img = Image.open('D:/ML/flower/flower_photos/roses/12240303_80d87f77a3_n.jpg')
+    img = Image.open('C:/Users/Alan/Desktop/timg_meitu_1.jpg')
     plt.imshow(img)
     plt.show()
     imag = img.resize([64, 64])
     image = np.array(imag)
-    evaluate_one_image(image)
+    a = evaluate_one_image(image)
+    print(a)

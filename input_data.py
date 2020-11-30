@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # ============================================================================
 # -----------------生成图片路径和标签的List------------------------------------
 
-train_dir = 'D:/ML/flower/input_data'
+train_dir = 'F:/WorkSpace/Python/four_flower/input_data'
 
 roses = []
 label_roses = []

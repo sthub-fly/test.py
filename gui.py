@@ -94,4 +94,5 @@ if __name__ == '__main__':
     app = wx.App()
     frm = HelloFrame(None, title='flower wolrd', size=(1000,600))
     frm.Show()
+
     app.MainLoop()
